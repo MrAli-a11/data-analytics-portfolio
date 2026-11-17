@@ -26,8 +26,135 @@
 
 
 -- SELECT & WHERE
+-- Only Delivered orders
+SELECT
+  order_id,
+  customer_name,
+  amount,
+  [status]
+FROM
+  orders
+WHERE
+  [status] = 'Delivered';
+
+
+-- Amount > 10000
+SELECT
+  order_id,
+  customer_name,
+  amount
+FROM
+  orders
+WHERE
+  amount > 10000;
+
+
+-- AND Operator
+-- Mumbai's Electronics items orders
+SELECT
+  order_id,
+  city,
+  category
+FROM
+  orders
+WHERE
+  city = 'Mumbai' AND category = 'Electronics';
+
+
+-- OR Operator
+SELECT
+  order_id,
+  [status]
+FROM
+  orders
+WHERE
+  [status] = 'Cancelled' OR [status] = 'Returned';
+
+
+-- Operator predence 
+-- Filter only Delivered orders from Mumbai and Delhi
+SELECT
+  *
+FROM
+  orders
+WHERE
+  (city = 'Mumbai' OR city = 'Delhi') AND [status] = 'Delivered';
+
+
+-- IN operator
+-- Filter orders by Mumbai, Bengaluru and Hyderabad
+SELECT  
+  order_id,
+  city
+FROM
+  orders
+WHERE
+  city IN ('Mumbai', 'Bangalore', 'Hyderabad');
+
+
+-- NOT IN Operator
+-- Remove electronics and fashion cat
+SELECT
+  order_id,
+  category
+FROM  
+  orders
+WHERE
+  category NOT IN ('Electronics', 'Fashion');
+
+
+-- BETWEEN Operator (Numbers)
+-- Amount is between 2000 and 10000
+SELECT
+  order_id,
+  amount
+FROM
+  orders
+WHERE
+  amount BETWEEN 2000 AND 10000;
+
+
+-- BETWEEN Operator (Dates)
+-- Orders between 1 Oct 2026 and 31 Oct 2026
+SELECT
+  order_id,
+  order_date
+FROM
+  orders
+WHERE
+  order_date BETWEEN '2026-10-01' AND '2026-10-31';
+
+
+-- LIKE OPERATOR
+-- Customer names start with A
 SELECT
   order_id,
   customer_name
 FROM
   orders
+WHERE
+  customer_name LIKE 'A%';
+
+
+-- Customer names end with Sharma or Verma
+SELECT
+  order_id,
+  customer_name
+FROM
+  orders
+WHERE
+  customer_name LIKE '%ma';
+
+
+-- Customer first names exact with 5 letter
+SELECT
+  order_id,
+  customer_name
+FROM
+  orders
+WHERE 
+  customer_name LIKE '_____ %';
+
+
+
+
