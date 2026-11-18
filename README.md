@@ -28,8 +28,8 @@ A disciplined, 4-hour daily execution sprint (**1 hr Morning Retention + 3 hrs E
 ## 📅 45-Day Execution & Progress Tracker
 
 ### Block 1: SQL Mastery (Days 1 – 16)
-- [ ] **Day 01 (Nov 17):** `SELECT`, `WHERE`, `AND/OR`, `IN`, `BETWEEN`, `LIKE` | *Morning:* LeetCode SQL 50 (Select - 5 Qs)
-- [ ] **Day 02 (Nov 18):** Aggregations (`COUNT`, `SUM`, `AVG`, `GROUP BY`, `HAVING`) | *Morning:* LeetCode SQL 50 (Aggregate - 4 Qs)
+- [x] **Day 01 (Nov 17):** `SELECT`, `WHERE`, `AND/OR`, `IN`, `BETWEEN`, `LIKE` | *Morning:* LeetCode SQL 50 (Select - 5 Qs)
+- [x] **Day 02 (Nov 18):** Aggregations (`COUNT`, `SUM`, `AVG`, `GROUP BY`, `HAVING`) | *Morning:* LeetCode SQL 50 (Aggregate - 4 Qs)
 - [ ] **Day 03 (Nov 19):** `CASE WHEN` statements & Data Type Casting (`CAST`) | *Morning:* LeetCode SQL 50 (Aggregate - 4 Qs)
 - [ ] **Day 04 (Nov 20):** `INNER JOIN` & `LEFT JOIN` (2 tables) | *Morning:* LeetCode SQL 50 (Basic Joins - 5 Qs)
 - [ ] **Day 05 (Nov 21):** Multiple Joins (3+ tables) & `SELF JOIN` | *Morning:* LeetCode SQL 50 (Basic Joins - 4 Qs)
