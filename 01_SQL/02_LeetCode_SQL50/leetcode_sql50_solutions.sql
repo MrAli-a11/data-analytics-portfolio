@@ -46,3 +46,27 @@ FROM
     Tweets
 WHERE
     LEN(content) > 15
+
+
+
+-- Replace Employee ID With The Unique Identifier
+SELECT
+    U.unique_id,
+    E.name
+FROM
+    Employees E
+LEFT JOIN EmployeeUNI U
+ON E.id = U.id
+
+
+
+-- Product Sales Analysis I
+SELECT
+    P.product_name,
+    S.year,
+    S.price
+FROM
+    Sales S
+LEFT JOIN 
+    Product P
+ON S.product_id = P.product_id
