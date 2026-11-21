@@ -32,7 +32,7 @@ A disciplined, 4-hour daily execution sprint (**1 hr Morning Retention + 3 hrs E
 - [x] **Day 02 (Nov 18):** Aggregations (`COUNT`, `SUM`, `AVG`, `GROUP BY`, `HAVING`) | *Morning:* LeetCode SQL 50 (Aggregate - 4 Qs)
 - [x] **Day 03 (Nov 19):** `CASE WHEN` statements & Data Type Casting (`CAST`) | *Morning:* LeetCode SQL 50 (Aggregate - 4 Qs)
 - [x] **Day 04 (Nov 20):** `INNER JOIN` & `LEFT JOIN` (2 tables) | *Morning:* LeetCode SQL 50 (Basic Joins - 5 Qs)
-- [ ] **Day 05 (Nov 21):** Multiple Joins (3+ tables) & `SELF JOIN` | *Morning:* LeetCode SQL 50 (Basic Joins - 4 Qs)
+- [x] **Day 05 (Nov 21):** Multiple Joins (3+ tables) & `SELF JOIN` | *Morning:* LeetCode SQL 50 (Basic Joins - 4 Qs)
 - [ ] **Day 06 (Nov 22):** Date Functions (`DATEDIFF`, `DATE_TRUNC`, `EXTRACT`) | *Morning:* LeetCode SQL 50 (Sorting & Grouping - 4 Qs)
 - [ ] **Day 07 (Nov 23):** String Functions (`TRIM`, `SUBSTRING`, `CONCAT`, `COALESCE`) | *Morning:* LeetCode SQL 50 (String/Regex - 4 Qs)
 - [ ] **Day 08 (Nov 24):** Subqueries (`WHERE` and `FROM` clauses) | *Morning:* LeetCode SQL 50 (Subqueries - 4 Qs)
