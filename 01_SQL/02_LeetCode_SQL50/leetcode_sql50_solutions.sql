@@ -70,3 +70,30 @@ FROM
 LEFT JOIN 
     Product P
 ON S.product_id = P.product_id
+
+
+
+-- Customer Who Visited but Did Not Make Any Transactions
+SELECT
+    V.customer_id ,
+    COUNT(*) AS count_no_trans 
+FROM
+    Visits V
+LEFT JOIN
+    Transactions T
+ON V.visit_id = T.visit_id
+WHERE 
+    T.transaction_id IS NULL
+GROUP BY V.customer_id 
+
+
+-- Rising Temperature
+SELECT
+    W1.id
+FROM
+    Weather W1
+JOIN
+    Weather W2
+ON DATEDIFF(DAY, W2.recordDate, W1.recordDate) = 1
+WHERE 
+    W1.temperature >  W2.temperature    

@@ -42,3 +42,9 @@ WHERE
 
 -- COMPOSITE INDEX: IT HANDLES MULTIPLE COLUMNS INSIDE SAME INDEX
 CREATE INDEX Idx_DBCustomers_CountryScore ON Sales.DBCustomers (Country, Score)
+
+
+-- COLUMNSTORE INDEX
+CREATE NONCLUSTERED COLUMNSTORE INDEX  Idx_DBCustomers_CS_FirstName ON Sales.DBCustomers (FirstName)
+
+DROP INDEX Idx_DBCustomers_CS ON Sales.DBCustomers 
