@@ -48,3 +48,29 @@ CREATE INDEX Idx_DBCustomers_CountryScore ON Sales.DBCustomers (Country, Score)
 CREATE NONCLUSTERED COLUMNSTORE INDEX  Idx_DBCustomers_CS_FirstName ON Sales.DBCustomers (FirstName)
 
 DROP INDEX Idx_DBCustomers_CS ON Sales.DBCustomers 
+
+
+-- UNIQUE COLUMNSTORE INDEX
+
+SELECT
+  *
+FROM
+  Sales.Products
+
+
+-- CREATE UNIQUE COLUMNSTORE INDEX
+CREATE UNIQUE NONCLUSTERED INDEX idx_product_product ON Sales.Products (Product)
+
+
+-- FILTERED INDEX
+SELECT
+  *
+FROM
+  Sales.Customers
+WHERE Country = 'USA'
+
+
+-- CREATE FILTERED INDEX
+CREATE NONCLUSTERED INDEX idx_customer_country ON Sales.Customers (Country)
+WHERE Country = 'USA'
+
