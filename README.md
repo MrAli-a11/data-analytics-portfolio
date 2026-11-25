@@ -36,7 +36,7 @@ A disciplined, 4-hour daily execution sprint (**1 hr Morning Retention + 3 hrs E
 - [x] **Day 06 (Nov 22):** Date Functions (`DATEDIFF`, `DATE_TRUNC`, `EXTRACT`) | *Morning:* LeetCode SQL 50 (Sorting & Grouping - 4 Qs)
 - [x] **Day 07 (Nov 23):** String Functions (`TRIM`, `SUBSTRING`, `CONCAT`, `COALESCE`) | *Morning:* LeetCode SQL 50 (String/Regex - 4 Qs)
 - [x] **Day 08 (Nov 24):** Subqueries (`WHERE` and `FROM` clauses) | *Morning:* LeetCode SQL 50 (Subqueries - 4 Qs)
-- [ ] **Day 09 (Nov 25):** CTEs (`WITH` clause) for modular queries | *Morning:* LeetCode SQL 50 (Subqueries & Advanced - 4 Qs)
+- [x] **Day 09 (Nov 25):** CTEs (`WITH` clause) for modular queries | *Morning:* LeetCode SQL 50 (Subqueries & Advanced - 4 Qs)
 - [ ] **Day 10 (Nov 26):** Window Functions Pt 1: `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()` | *Morning:* DataLemur Ranking Medium (3 Qs)
 - [ ] **Day 11 (Nov 27):** Window Functions Pt 2: `LEAD()` & `LAG()` (MoM/YoY Growth) | *Morning:* DataLemur Growth/Rolling Avg (3 Qs)
 - [ ] **Day 12 (Nov 28):** Window Functions Pt 3: Running Total (`SUM() OVER`) | *Morning:* LeetCode SQL 50 (Remaining Qs - 4 Qs)
